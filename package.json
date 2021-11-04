@@ -1,6 +1,6 @@
 {
   "name": "almost-ui",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "almost",
   "private": false,
   "main": "dist/index.js",
@@ -98,6 +98,7 @@
     "babel-plugin-import": "^1.13.3",
     "copy-webpack-plugin": "6.0.3",
     "craco-less": "^1.20.0",
+    "cross-env": "^7.0.3",
     "husky": "^7.0.4",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
