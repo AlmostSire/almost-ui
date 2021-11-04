@@ -1,0 +1,29 @@
+
+.zoom-animation (@className, @direction) {
+    .@{className}-enter {
+        opacity: 0;
+        transform: scale(0);
+        
+    }
+    .@{className}-enter-active {
+        opacity: 1;
+        transform: scale(1);
+        transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+        transform-origin: @direction
+    }
+    .@{className}-exit {
+        opacity: 1;
+        transform: scale(1);
+    }
+    .@{className}-exit-active {
+        opacity: 0;
+        transform: scale(0);
+        transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
+        transform-origin: @direction
+    }
+}
+
+.zoom-animation(zoom-in-top, top);
+.zoom-animation(zoom-in-left, left);
+.zoom-animation(zoom-in-bottom, bottom);
+.zoom-animation(zoom-in-right, right);
