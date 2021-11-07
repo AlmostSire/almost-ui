@@ -7,7 +7,8 @@
         "jsx": "react", 
         "moduleResolution": "node",
         "allowSyntheticDefaultImports": true,
-        "isolatedModules": true
+        "isolatedModules": true,
+        "strict": false,
     },
     "include": [
         "src"
@@ -15,5 +16,6 @@
     "exclude": [
         "src/**/*.test.tsx",
         "src/**/*.stories.tsx",
+        // "src/components/ConfigProvider",
     ]
 }

@@ -97,4 +97,15 @@
   transition: transform 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms, opacity 300ms cubic-bezier(0.23, 1, 0.32, 1) 100ms;
   transform-origin: right;
 }
+.almost-layout {
+  display: flex;
+  height: 100%;
+}
+.almost-layout .almost-layout-resizable {
+  width: 200px;
+  height: 100%;
+}
+.almost-layout .almost-layout-adaptable {
+  flex: 1 1;
+}
 

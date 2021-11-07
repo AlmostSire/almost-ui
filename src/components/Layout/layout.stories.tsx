@@ -1,4 +1,4 @@
-import { CSSProperties, FC } from 'react';
+import React, { CSSProperties } from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import Layout from './index';
 

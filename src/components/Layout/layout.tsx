@@ -1,4 +1,4 @@
-import { FC, Children, FunctionComponentElement, cloneElement, HtmlHTMLAttributes } from 'react';
+import React, { FC, Children, FunctionComponentElement, cloneElement, HtmlHTMLAttributes } from 'react';
 import { ResizableBoxProps } from './ResizableBox';
 import classNames from 'classnames';
 

@@ -1,4 +1,4 @@
-import { FC } from 'react'
+import React, { FC } from 'react'
 import Layout, { LayoutProps as ILayoutProps } from './layout'
 import ResizableBox, { ResizableBoxProps } from './ResizableBox';
 import AdoptableBox, { AdoptableBoxProps } from './AdoptableBox';

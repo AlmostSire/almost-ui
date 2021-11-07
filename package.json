@@ -1,6 +1,6 @@
 {
   "name": "almost-ui",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": "AlmostSire",
   "private": false,
   "main": "dist/index.js",
@@ -28,7 +28,7 @@
     "babel-loader": "8.1.0",
     "classnames": "^2.3.1",
     "re-resizable": "^6.9.1",
-    "react-intl": "^5.21.0",
+    "react-intl": "5.10.17",
     "react-transition-group": "^4.4.2"
   },
   "peerDependencies": {
@@ -36,16 +36,15 @@
     "react-dom": ">= 16.8.0"
   },
   "scripts": {
-    "start": "craco start",
+    "start": "start-storybook -p 6006 -s public",
+    "build": "npm run build-css && npm run build-ts",
     "lint": "eslint --ext js,ts,tsx src --max-warnings 5",
     "test": "craco test",
     "test:nowatch": "cross-env CI=true",
     "eject": "react-scripts eject",
-    "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
     "build-css": "craco build",
     "build-ts": "tsc -p tsconfig.build.json",
-    "build": "npm run build-css && npm run build-ts",
     "prepublishOnly": "npm run test:nowatch & npm run lint & npm run build"
   },
   "husky": {
@@ -64,7 +63,8 @@
           "**/*.stories.*"
         ],
         "rules": {
-          "import/no-anonymous-default-export": "off"
+          "import/no-anonymous-default-export": "off",
+          "no-unused-vars": "off"
         }
       }
     ]
@@ -94,8 +94,8 @@
     "@testing-library/user-event": "^12.1.10",
     "@types/jest": "^26.0.15",
     "@types/node": "^12.0.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
+    "@types/react": "^17.0.2",
+    "@types/react-dom": "^17.0.2",
     "@types/react-transition-group": "^4.4.4",
     "babel-plugin-import": "^1.13.3",
     "copy-webpack-plugin": "6.0.3",
@@ -106,7 +106,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
-    "typescript": "^4.1.2",
+    "typescript": "4.4.4",
     "web-vitals": "^1.0.1",
     "webpack": "4.44.2"
   }

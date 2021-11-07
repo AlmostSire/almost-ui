@@ -23,6 +23,9 @@ var __rest = (this && this.__rest) || function (s, e) {
 import React from 'react';
 import classNames from 'classnames';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import { library } from '@fortawesome/fontawesome-svg-core';
+library.add(fas);
 export var Icon = function (props) {
     var _a;
     var className = props.className, theme = props.theme, restProps = __rest(props, ["className", "theme"]);

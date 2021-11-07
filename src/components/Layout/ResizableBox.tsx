@@ -1,4 +1,4 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
 import { Resizable, ResizableProps } from 're-resizable';
 
 export interface ResizableBoxProps extends ResizableProps {
