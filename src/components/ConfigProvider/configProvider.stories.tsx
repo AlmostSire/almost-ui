@@ -181,4 +181,3 @@ const Template: ComponentStory<typeof ConfigProvider> = () => {
 }
 
 export const Basic = Template.bind({})
-

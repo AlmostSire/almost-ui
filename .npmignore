@@ -1,0 +1,8 @@
+**/.*
+node_modules/
+craco.config.js
+babel.config.json
+tsconfig.build.json
+tsconfig.json
+public/
+yarn.lock

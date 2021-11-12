@@ -12,7 +12,7 @@ module.exports = {
 			options: {
 				lessLoaderOptions: {
 					lessOptions: {
-						modifyVars: { '@primary-color': '#1DA57A' },
+						modifyVars: { '@primary-color': 'red' },
 						javascriptEnabled: true,
 					},
 				},
@@ -42,7 +42,7 @@ module.exports = {
 					new CopyWebpackPlugin({
 						patterns: [{
 							from: path.join(paths.appSrc, './components'),
-							to: path.join(paths.appBuild , `./components`),
+							to: path.join(paths.appBuild , `./components/**/style`),
 							globOptions: { 
 								ignore: ['**/*.tsx'] 
 							}
