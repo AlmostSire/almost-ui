@@ -19,7 +19,7 @@ interface CustomButtonProps extends ButtonProps {
    */
   onClick?: () => void;
    /**
-   * 测试文档dhhh
+   * 测试文档
    */
   name?: string;
 }
